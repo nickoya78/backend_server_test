@@ -7,3 +7,4 @@ exports.EMAIL_CONFIG = {
     user: process.env.EMAIL_USER || 'oyagha1978@gmail.com',
     pass: process.env.EMAIL_PASS || 'aztg ytzm qxwh hsnx'
 };
+//# sourceMappingURL=config.js.map

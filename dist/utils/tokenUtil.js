@@ -10,3 +10,4 @@ const generateToken = (payload) => {
     return jsonwebtoken_1.default.sign(payload, config_1.JWT_SECRET, { expiresIn: '1h' });
 };
 exports.generateToken = generateToken;
+//# sourceMappingURL=tokenUtil.js.map

@@ -10,3 +10,4 @@ router.get('/protected-route', authMiddleware_1.authenticateToken, (req, res) =>
     res.json({ message: "You've accessed a protected route!" });
 });
 exports.default = router;
+//# sourceMappingURL=userRoutes.js.map
