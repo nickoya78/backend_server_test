@@ -5,4 +5,3 @@ const logger = (message) => {
     console.log(new Date().toISOString() + ": " + message);
 };
 exports.logger = logger;
-//# sourceMappingURL=logger.js.map

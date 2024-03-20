@@ -10,4 +10,3 @@ const validateUserRegistration = (req, res, next) => {
     next();
 };
 exports.validateUserRegistration = validateUserRegistration;
-//# sourceMappingURL=userValidation.js.map

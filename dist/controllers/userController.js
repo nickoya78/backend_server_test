@@ -68,4 +68,3 @@ const loginUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.loginUser = loginUser;
-//# sourceMappingURL=userController.js.map
