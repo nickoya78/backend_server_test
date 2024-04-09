@@ -20,8 +20,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Genrate Deployment Package
-        run: zip -r dist-build.zip .
+      - name: Build application
+        run: npm run build
+
+      - name: Generate Deployment Package
+        run: zip -r deploy.zip *
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
@@ -32,5 +35,4 @@ jobs:
           environment_name: ${{ secrets.EB_ENVIRONMENT_NAME }}
           version_label: ${{ github.run_id }}
           region: ${{ secrets.AWS_REGION }}
-          deployment_package: dist-build.zip
-          use_existing_version_if_available: true
+          deployment_package: deploy.zip
