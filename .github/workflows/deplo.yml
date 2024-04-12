@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Generate Deployment Package
-        run: zip -r nodejs-app-build.zip .
+        run: zip -r backend-server-build.zip .
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
@@ -32,4 +32,4 @@ jobs:
           environment_name: ${{ secrets.EB_ENVIRONMENT_NAME }}
           version_label: ${{ github.sha }}
           region: ${{ secrets.AWS_REGION }}
-          deployment_package: nodejs-app-build.zip
+          deployment_package: backend-server-build.zip
