@@ -5,11 +5,10 @@ import userRoutes from './routes/userRoutes';
 const app = express();
 
 app.use(cors({
-  "origin": "*",
-  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-  "preflightContinue": false,
-  "optionsSuccessStatus": 204
-}));
+    origin: 'http://frontend-app-test.s3-website-us-west-1.amazonaws.com',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+  }));
   
   app.use(express.json());
 // Add a route for /
